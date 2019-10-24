@@ -9,6 +9,10 @@
         "description": "Your Name",
         "x-prompt": "What is your name?"
       },
+      "project": {
+        "type": "string",
+        "description": "Generate in specific Angular CLI workspace project"
+      },      
       "typegreeting": {
           "type": "string",
           "description": "Your greeting",
@@ -21,7 +25,7 @@
             "message": "What is your type greeting?",
             "type": "list",
             "items": [
-                { "value": "faminine", "label": "Feminine" },
+                { "value": "feminine", "label": "Feminine" },
                 { "value": "masculine", "label": "Masculine" },
                 { "value": "genderless", "label": "Genderless" }
             ]            
