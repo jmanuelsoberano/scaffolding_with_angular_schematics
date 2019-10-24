@@ -5,7 +5,8 @@ import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
 // per file.
 export function seed(_options: any): Rule {
   return (tree: Tree, _context: SchematicContext) => {
-    tree.create('seed.js', 'Hello world!');
+    const { name } = _options;
+    tree.create('seed.js', `Hello world! ${name}`);
     return tree;
   };
 }
