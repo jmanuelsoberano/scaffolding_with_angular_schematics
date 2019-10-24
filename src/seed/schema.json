@@ -8,6 +8,24 @@
         "type": "string",
         "description": "Your Name",
         "x-prompt": "What is your name?"
+      },
+      "typegreeting": {
+          "type": "string",
+          "description": "Your greeting",
+          "enum": [
+            "feminine",
+            "masculine",
+            "genderless"
+          ],
+          "x-prompt": {
+            "message": "What is your type greeting?",
+            "type": "list",
+            "items": [
+                { "value": "faminine", "label": "Feminine" },
+                { "value": "masculine", "label": "Masculine" },
+                { "value": "genderless", "label": "Genderless" }
+            ]            
+          }
       }
     },
     "required": ["name"]
